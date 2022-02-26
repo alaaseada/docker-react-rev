@@ -6,4 +6,4 @@ before_install:
   - docker build -t aseadadocker/docker-react-rev -f Dockerfile.dev .
 
 script: 
-  - docker run aseadadocker/docker-react-rev -- --coverage --watchAll=false
+  - docker run aseadadocker/docker-react-rev npm test -- --coverage --watchAll=false
